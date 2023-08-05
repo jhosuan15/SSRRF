@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="escudo.png">
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #000000;
+
+      }
+
+      .dark-mode {
+        background-color: #212121;
+        color: #ffffff;
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+        /* Ancho del scroll */
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: #fff;
+        /* Color del fondo del scroll */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        height: 800px;
+        background-color: #194A8D;
+        /* Color de la barra de desplazamiento */
+      }
+
+
+      .informacion3 {
+        padding: 50px;
+        text-align: center;
+        width: 100%;
+        height: 1100px;
+        background-color: #E3F2FD;
+        border-bottom: 0.2px solid gray;
+        color: #194A8D;
+      }
+      .informacion5 {
+        padding: 50px;
+        text-align: center;
+        width: 100%;
+        height: 650px;
+        background-color: #E3F2FD;
+        border-bottom: 0.2px solid gray;
+        color: #194A8D;
+      }
+
+      .contImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/img.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 1000px;
+        width: 100%;
+
+      }
+
+      .form {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      .informacion {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        background-color: #F5F5F5;
+        border-bottom: 0.2px solid gray;
+      }
+
+      .informacionWhatsapp {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        background-color: #2BB540;
+        border-bottom: 0.2px solid gray;
+      }
+
+      .titulo2 {
+        margin: 0px auto;
+      }
+
+      .tituloWhatsapp {
+        margin: 0px auto;
+        color: #fff;
+      }
+      .info2{
+        background-color: transparent;
+        border-bottom: 1px solid lightcoral ;
+        height: 170px;
+      }
+      .informacion2 {
+        padding-top: 35px;
+        padding-left: 50px;
+        padding-right: 30px;
+        text-align: left;
+        width: 100%;
+        height: 350px;
+        background-color: #F5F5F5;
+        border-bottom: 0.2px solid gray;
+      }
+
+      .contactanos {
+        background-color: #113A56;
+        border: 2px solid white;
+        color: white;
+        height: 50px;
+        width: 150px;
+      }
+
+      .leer {
+        background-color: #026BA3;
+        border: 2px solid white;
+        color: white;
+        height: 50px;
+        width: 150px;
+      }
+
+      .send {
+        margin-top: 34px;
+        background-color: #113A56;
+        border: 2px solid white;
+        color: white;
+        height: 50px;
+        width: 150px;
+
+      }
+
+      @media (max-width: 768px) {
+        .contImg {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: url("/img.png");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          height: 500px;
+          width: 100%;
+
+        }
+
+        .informacion2 {
+          padding-top: 35px;
+          padding-left: 35px;
+          padding-right: 15px;
+          text-align: left;
+          width: 100%;
+          height: 470px;
+          background-color: #F5F5F5;
+          border-bottom: 0.2px solid gray;
+        }
+        .informacion5 {
+        padding: 50px;
+        text-align: center;
+        width: 100%;
+        height: 950px;
+        background-color: #E3F2FD;
+        border-bottom: 0.2px solid gray;
+        color: #194A8D;
+      }
+      }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"></script>
+      <title>SERVICIOS</title>
+      <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
+
+  <body style="background-color: #EDF0F5;">
+    <nav style="background-color: #194A8D; color: white;" class="navbar navbar-expand-lg  fixed-top" id="myNav">
+      <div style="background-color: #194A8D; color: white;" class="container-fluid">
+        <img src="logo.png" style="height: 75px; width: 100px;" alt="">
+        <button style="background-color: white;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
+          <ul class="navbar-nav">
+            <li class="nav-item" style="margin-right: 100px">
+              <a style="color: white;" class="nav-link" href="/Inicio.html">INICIO</a>
+            </li>
+            <li class="nav-item" style="margin-right: 100px">
+              <a style="color: white;" class="nav-link" href="/Nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item" style="margin-right: 100px">
+              <a style="color: white;" class="nav-link" href="/Servicios.html">SERVICIOS</a>
+            </li>
+            <li class="nav-item" style="margin-right: 100px">
+              <a style="color: white;" class="nav-link" href="/Contacto.html">CONTACTO</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
+    </nav>
+
+
+<br><br><br>
+<h1 class="text-center" style="color: #194A8D; padding-top: 150px; padding-bottom: 50px;">
+    SERVICIOS
+  </h1>
+  <div style="height: 400px; width: 100%;">
+    <video controls style="width: 100%; height: 100%;">
+      <source src="/Glitchy YouTube gaming intro - Made with Clipchamp (1).mp4" type="video/mp4">
+      
+    </video>
+  </div>
+
+    <div style="margin-top: 100px; margin: 0 25px" class="content content1">
+      <h3 class="text-center" style="border-bottom: 1px solid gray; color: #194A8D; padding: 50px">
+        REDES DE DATOS
+      </h3>
+      <p style="padding: 25px; text-align: justify">
+       
+Las redes son cruciales para empresas y hogares debido a que proporcionan conectividad, acceso a Internet, comunicación en tiempo real y automatización de procesos. También permiten el almacenamiento y respaldo de datos, mejoran la seguridad con sistemas de vigilancia y alarmas, y habilitan el Internet de las cosas (IoT) para una mayor comodidad y eficiencia. Además, las redes permiten el análisis de datos y la toma de decisiones informadas, facilitando la vida moderna y ofreciendo oportunidades para el crecimiento y desarrollo tanto en el ámbito empresarial como en el hogar.
+      </p>
+    </div>
+
+    <div style="margin-top: 100px; margin: 0 25px" class="content content1">
+        <h3 class="text-center" style="border-bottom: 1px solid gray; color: #194A8D; padding: 50px">
+          CAMARAS DE SEGURIDAD
+        </h3>
+        <p style="padding: 25px; text-align: justify">
+         
+            Las cámaras de seguridad en casas y empresas son importantes porque disuaden delitos, proporcionan pruebas en caso de incidentes, mejoran la seguridad y el control, protegen activos y garantizan el bienestar de empleados y residentes. Además, permiten supervisar operaciones en tiempo real, controlar el acceso a áreas restringidas y rastrear actividades. Su presencia visible puede evitar comportamientos inapropiados y asegurar un ambiente más seguro y protegido en general.
+        </p>
+      </div>
+
+      <div style="margin-top: 100px; margin: 0 25px" class="content content1">
+        <h3 class="text-center" style="border-bottom: 1px solid gray; color: #194A8D; padding: 50px">
+          ALARMAS DE SEGURIDAD
+        </h3>
+        <p style="padding: 25px; text-align: justify">
+         
+            Las alarmas son sistemas de seguridad cruciales en casas y empresas, ya que previenen delitos y situaciones peligrosas, alertan rápidamente ante emergencias, protegen bienes y personas, detectan incendios y cumplen con regulaciones. También brindan seguridad las 24 horas, reducen primas de seguro y proporcionan tranquilidad a los usuarios. Su correcta instalación y mantenimiento garantizan su efectividad.
+        </p>
+      </div>
+
+      <div style="margin-top: 100px; margin: 0 25px" class="content content1">
+        <h3 class="text-center" style="border-bottom: 1px solid gray; color: #194A8D; padding: 50px">
+          ENLACES INALAMBRICOS
+        </h3>
+        <p style="padding: 25px; text-align: justify">
+         
+            Los enlaces inalámbricos punto a punto son conexiones sin cables entre dos puntos que transmiten datos mediante señales de radio o microondas. Se utilizan para extender redes en áreas remotas o donde el cableado es difícil. Ofrecen flexibilidad, movilidad y menor costo de instalación en comparación con cables. La velocidad y calidad de la conexión dependen de la distancia y obstáculos entre los puntos. Requieren una alineación y configuración adecuadas para un rendimiento óptimo. Son comunes en aplicaciones como acceso a internet, comunicación entre edificios o cámaras de vigilancia. Importantes para mejorar la conectividad en zonas rurales o lugares con infraestructura limitada. Las tecnologías comunes incluyen Wi-Fi, WiMAX y enlaces punto a punto con antenas direccionales.
+        </p>
+      </div>
+
+    <div style="margin-top: 100px; margin: 0 25px" class="content content1">
+      <h1 class="text-center" style="border-bottom: 1px solid gray; color: #194A8D; padding: 50px">
+        NUESTRAS MARCAS
+      </h1>
+      <img
+        src="https://th.bing.com/th/id/R.a8f19a28cb68fe3d4e6f357087ad5fe5?rik=SjIZybwK8q1FCQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-QztqUfhOkIw%2fU4y3_RwaZvI%2fAAAAAAAA3bw%2fRfZDH4tlutM%2fs1600%2fPATENTES%2bE%2bMARCAS.jpg&ehk=9K3DA08puhjvXrjoUTjrRv2FQSELqoL1%2fe9%2fcg3jHYM%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+        alt="" style="width: 100%; height: 300px;">
+    </div>
+<br><br><br>
+<div class="informacion">
+
+    <b class="titulo2">TELEFONO</b>
+    <p>+506 6057 5798</p>
+  </div>
+  <div class="informacion">
+    <b class="titulo2">EMAIL</b>
+    <p>sistemasdeseguridadrf@gmail.com</p>
+  </div>
+  <div class="informacionWhatsapp">
+    <b class="tituloWhatsapp">ENVIANOS UN</b><br>
+    <b><a style="color: #fff;" id="whatsapp-button">WHATSAPP</a></b>
+  </div>
+
+
+
+    <footer style="background-color: #194A8D;" class="text-white py-3 mt-auto">
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>SISTEMAS DE SEGURIDAD Y REDES RF</p>
+          <p>&copy; 2023 HACKMIND</p>
+
+        </div>
+      </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("whatsapp-button").addEventListener("click", function () {
+        var phoneNumber = "+50660575798"; // Reemplaza esto con tu número de teléfono (incluido el código de país).
+        var message = "Hola, quiero obtener más información."; // Mensaje predefinido opcional.
+
+        // Crea el enlace de WhatsApp
+        var whatsappLink = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+
+        // Abre el enlace en una nueva ventana o pestaña.
+        window.open(whatsappLink, "_blank");
+      });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // init: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+
+        breakpoints: {
+          620: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          680: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          920: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1240: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }
+      });
+    </script>
+
+  </body>
+
+</html>
